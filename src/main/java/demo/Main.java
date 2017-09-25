@@ -34,7 +34,7 @@ public class Main {
 
         // 创建reader
         FlatFileItemReader<DeviceCommand> flatFileItemReader = new FlatFileItemReader<>();
-        flatFileItemReader.setResource(new FileSystemResource("src/main/resources/batch-data.csv"));
+        flatFileItemReader.setResource(new FileSystemResource("src/main/resources/batch-data-source.csv"));
         flatFileItemReader.setLineMapper(new HelloLineMapper());
 
         // 创建processor
@@ -42,7 +42,7 @@ public class Main {
 
         // 创建writer
         FlatFileItemWriter<DeviceCommand> flatFileItemWriter = new FlatFileItemWriter<>();
-        flatFileItemWriter.setResource(new FileSystemResource("src/main/resources/batch-data.csv"));
+        flatFileItemWriter.setResource(new FileSystemResource("src/main/resources/batch-data-target.csv"));
         flatFileItemWriter.setLineAggregator(new HelloLineAggregator());
 
 
