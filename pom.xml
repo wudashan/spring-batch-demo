@@ -14,7 +14,7 @@
             <dependency>
                 <groupId>org.springframework.batch</groupId>
                 <artifactId>spring-batch-core</artifactId>
-                <version>3.0.8.RELEASE</version>
+                <version>4.0.0.RELEASE</version>
             </dependency>
 
 
